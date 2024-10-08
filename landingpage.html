@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorMatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center h-screen" style="background-image: url('bg.jpg');">
+    <!-- Hero Section -->
+    <div class="flex flex-col h-full justify-center items-start p-10 bg-black bg-opacity-50">
+        <div class="flex items-center mb-8">
+            <i class="fas fa-graduation-cap text-white text-2xl mr-2"></i>
+            <span class="text-white text-xl font-bold">MentorMatch</span>
+        </div>
+        <div class="text-white text-5xl font-bold mb-6">
+            Mentorship,<br>
+            Growth, and<br>
+            Success
+        </div>
+        <div class="text-white text-lg max-w-md mb-8">
+            For over a decade, MentorMatch has been dedicated to connecting aspiring individuals with experienced mentors, fostering growth, and guiding mentees toward their personal and professional goals.
+        </div>
+        <button class="bg-lime-500 text-black text-lg font-bold py-3 px-6 rounded-full flex items-center">
+            <a href="homepage.html" class="text-black">JOIN US</a>
+            <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-80 fixed top-0 left-0 w-full p-4 text-white">
+        <div class="flex space-x-8 justify-center">
+            <a href="#about" class="hover:text-lime-500 transition duration-300">About</a>
+            <a href="#weoffer" class="hover:text-lime-500 transition duration-300">What We Offer</a>
+            <a href="#contact" class="hover:text-lime-500 transition duration-300">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">About Us</h2>
+            <p class="text-lg max-w-2xl mx-auto text-center text-gray-700">
+                MentorMatch is an online mentorship platform that bridges the gap between mentors and mentees. We provide a seamless experience where professionals can share their expertise, guiding the next generation toward success.
+            </p>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section id="weoffer" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">What We Offer</h2>
+            <div class="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
+                <div class="max-w-xs text-center">
+                    <i class="fas fa-lightbulb text-4xl text-lime-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">MENTOR MATCHING</h3>
+                    <p>We pair mentees with mentors who align with their goals and areas of interest, ensuring a customized growth experience.</p>
+                </div>
+                <div class="max-w-xs text-center">
+                    <i class="fas fa-chalkboard-teacher text-4xl text-lime-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">FLEXIBLE SESSION SCHEDULING</h3>
+                    <p>Our scheduling tools make it easy to book mentorship sessions, fitting seamlessly into any busy lifestyle for a personalized learning experience.</p>
+                </div>
+                <div class="max-w-xs text-center">
+                    <i class="fas fa-rocket text-4xl text-lime-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">PROGRESS TRACKING</h3>
+                    <p>Track goals, monitor achievements, and stay on top of personal and professional growth milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-center">Contact Us</h2>
+            <div class="flex flex-col items-center">
+                <p class="text-lg max-w-lg text-center text-gray-700 mb-6">
+                    Have any questions? We’d love to hear from you. Feel free to reach out through the form below, and we’ll get back to you as soon as possible.
+                </p>
+                <form class="w-full max-w-lg">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
+                                Name
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+                                Email
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="email" type="email" placeholder="youremail@example.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
+                                Message
+                            </label>
+                            <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="message" rows="4" placeholder="Write your message here"></textarea>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="bg-lime-500 text-black font-bold py-3 px-6 rounded-full" type="submit">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
